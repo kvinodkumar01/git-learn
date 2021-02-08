@@ -1,0 +1,57 @@
+Microsoft Windows [Version 10.0.19042.685]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>wmic diskdrive get model
+Model
+ST1000LM035-1RK172
+SAMSUNG MZALQ128HBHQ-000L2
+
+C:\Windows\system32>wmic diskdrive get serialnumber
+SerialNumber
+WQ9BKK0D
+0025_38A7_01D9_056C.
+
+C:\Windows\system32>wmic memorychip get serialnumber
+SerialNumber
+2A317F74
+00000000
+
+C:\Windows\system32>wmic baseboard get serialnumber
+SerialNumber
+PF22QEQL
+
+C:\Windows\system32>wmic memorychip get banklabel,devicelocator,memorytype,typedetail,capacity,speed
+BankLabel     Capacity    DeviceLocator  MemoryType  Speed  TypeDetail
+P0 CHANNEL A  4294967296  DIMM 0         0           2400   16512
+P0 CHANNEL B  4294967296  DIMM 0         0           2400   16512
+
+C:\Windows\system32>wmic memorychip list full
+
+BankLabel=P0 CHANNEL A
+Capacity=4294967296
+DataWidth=64
+Description=Physical Memory
+DeviceLocator=DIMM 0
+Manufacturer=Micron Technology
+PartNumber=4ATF51264HZ-3G2J1
+SerialNumber=2A317F74
+Speed=2400
+Tag=Physical Memory 0
+TotalWidth=64
+TypeDetail=16512
+
+BankLabel=P0 CHANNEL B
+Capacity=4294967296
+DataWidth=64
+Description=Physical Memory
+DeviceLocator=DIMM 0
+FormFactor=12
+Manufacturer=Samsung
+MemoryType=0
+Name=Physical Memory
+PartNumber=M471A5244CB0-CTD
+SerialNumber=00000000
+Speed=2400
+Tag=Physical Memory 1
+TotalWidth=64
+TypeDetail=16512
